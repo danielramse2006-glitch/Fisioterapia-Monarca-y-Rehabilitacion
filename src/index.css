@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-neon: #DFFF00;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .text-neon { color: #DFFF00; }
+  .bg-neon { background-color: #DFFF00; }
+  .border-neon { border-color: #DFFF00; }
+  
+  .glass-card {
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(223, 255, 0, 0.1);
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #000; }
+  ::-webkit-scrollbar-thumb {
+    background: #DFFF00;
+    border-radius: 10px;
+  }
+}
