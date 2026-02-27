@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -32,7 +31,7 @@ export const Stats: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-32">
           {stats.map((s, i) => (
             <motion.div 
               key={i} 
@@ -41,10 +40,12 @@ export const Stats: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-zinc-900/50 border border-zinc-800 p-12 rounded-[2.5rem] text-center group hover:border-neon transition-all duration-500"
+              className="bg-zinc-900/50 border border-zinc-800 p-6 md:p-12 rounded-[2.5rem] text-center group hover:border-neon transition-all duration-500 min-w-0"
             >
-              <div className="text-6xl font-black text-neon mb-3 group-hover:drop-shadow-[0_0_15px_rgba(223,255,0,0.5)] transition-all">{s.val}</div>
-              <div className="text-zinc-500 text-xs font-black tracking-[0.2em]">{s.label}</div>
+              <div className="text-3xl sm:text-4xl md:text-6xl font-black text-neon mb-3 group-hover:drop-shadow-[0_0_15px_rgba(223,255,0,0.5)] transition-all break-words leading-tight">
+                {s.val}
+              </div>
+              <div className="text-zinc-500 text-[9px] sm:text-xs font-black tracking-[0.15em]">{s.label}</div>
             </motion.div>
           ))}
         </div>
