@@ -33,7 +33,7 @@ export const TeamEquipment: React.FC = () => {
         >
           {/* Duplicamos los items para el loop infinito */}
           {[...items, ...items].map((item, i) => (
-            <div key={i} className="inline-block w-[280px] md:w-[420px] mx-4 whitespace-normal group relative overflow-hidden rounded-[2.5rem] bg-zinc-900 border border-zinc-800 aspect-[4/5] transition-all duration-500 hover:border-neon/50">
+            <div key={i} className="inline-block w-[240px] md:w-[380px] mx-4 whitespace-normal group relative overflow-hidden rounded-[2.5rem] bg-zinc-900 border border-zinc-800 aspect-[4/5] transition-all duration-500 hover:border-neon/50">
               <img 
                 src={item.img} 
                 alt={item.title} 
