@@ -1,11 +1,11 @@
 import React from 'react';
 
 const items = [
-  { title: "Láser Terapéutico", desc: "Luz roja para regeneración tisular", img: "imagenes/FOTO1.jpg" },
-  { title: "Electroestimulador TENS/EMS", desc: "Parches de estimulación muscular avanzada", img: "imagenes/FOTO2.jpg" },
-  { title: "Masajeador de Percusión Médico", desc: "Aparato de alta frecuencia con manijas", img: "imagenes/FOTO3.jpg" },
-  { title: "Ondas de Choque Radiales", desc: "Cilindro plateado de terapia profunda", img: "imagenes/FOTO4.jpg" },
-  { title: "Ultrasonido Terapéutico", desc: "Cabeza gris circular de precisión", img: "imagenes/FOTO5.jpg" },
+  { title: "Láser Terapéutico", desc: "Luz roja para regeneración tisular", img: "/imagenes/FOTO1.jpg" },
+  { title: "Electroestimulador TENS/EMS", desc: "Parches de estimulación muscular avanzada", img: "/imagenes/FOTO2.jpg" },
+  { title: "Masajeador de Percusión Médico", desc: "Aparato de alta frecuencia con manijas", img: "/imagenes/FOTO3.jpg" },
+  { title: "Ondas de Choque Radiales", desc: "Cilindro plateado de terapia profunda", img: "/imagenes/FOTO4.jpg" },
+  { title: "Ultrasonido Terapéutico", desc: "Cabeza gris circular de precisión", img: "/imagenes/FOTO5.jpg" },
 ];
 
 const carouselStyles = `
