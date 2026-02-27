@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 const items = [
-  { title: "Láser Terapéutico", desc: "Luz roja para regeneración tisular", img: "https://i.ibb.co/S4bqp5kL/FOTO1.jpg" },
+  { title: "Láser Terapéutico", desc: "Luz roja para regeneración tisular", img: "https://i.ibb.co/wFVD1Bnv/FOTO1.jpg" },
   { title: "Electroestimulador TENS/EMS", desc: "Parches de estimulación muscular avanzada", img: "https://i.ibb.co/7t27jM2n/FOTO2.jpg" },
   { title: "Masajeador de Percusión Médico", desc: "Aparato de alta frecuencia con manijas", img: "https://i.ibb.co/7NtwKyDM/FOTO3.jpg" },
   { title: "Ondas de Choque Radiales", desc: "Cilindro plateado de terapia profunda", img: "https://i.ibb.co/wF0Bw8qD/FOTO4.jpg" },
